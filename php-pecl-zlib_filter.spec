@@ -30,9 +30,16 @@ use the compress.zlib:// fopen wrapper built directly into PHP.
 
 In PECL status of this extension is: %{_status}.
 
-#%description -l pl
-#
-#To rozszerzenie ma w PECL status: %{_status}.
+%description -l pl
+Implementacja filtra strumienia inflate/deflate zgodna z RFC 1951.
+Wykonuje kompresjê/dekompresjê metod± deflate na dowolnym strumieniu
+I/O PHP. Dane stworzone przez ten filtr, bêd±c kompatybilnymi z
+czê¶ci± RFC 1952 dotycz±c± payloadu pliku gzip, nie zawieraj±
+nag³ówków ani koñcówek dla pe³nej zgodno¶ci z gzipem wed³ug RFC 1952.
+Aby osi±gn±æ ten format, trzeba u¿yæ wrappera fopen compress.zlib://
+wbudowanego bezpo¶rednio w PHP.
+
+To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -c
