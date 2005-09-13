@@ -11,7 +11,6 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	1ebb48e3fd1be4593a4eb217fbc1ab53
 URL:		http://pecl.php.net/package/zlib_filter/
-BuildRequires:	libtool
 BuildRequires:	php-devel >= 3:5.0.0
 Requires:	php-common >= 3:5.0.0
 Obsoletes:	php-pear-%{_modname}
