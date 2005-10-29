@@ -2,19 +2,18 @@
 %define		_status		stable
 %define		_sysconfdir	/etc/php
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
-
 Summary:	%{_modname} - zlib filter implementation backport for PHP 5.0
 Summary(pl):	%{_modname} - backport implementacji filtra zlib dla PHP 5.0
 Name:		php-pecl-%{_modname}
 Version:	1.1
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	1ebb48e3fd1be4593a4eb217fbc1ab53
 URL:		http://pecl.php.net/package/zlib_filter/
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.238
+BuildRequires:	rpmbuild(macros) >= 1.254
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
