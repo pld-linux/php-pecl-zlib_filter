@@ -1,7 +1,7 @@
 %define		_modname	zlib_filter
 %define		_status		stable
 Summary:	%{_modname} - zlib filter implementation backport for PHP 5.0
-Summary(pl.UTF-8):   %{_modname} - backport implementacji filtra zlib dla PHP 5.0
+Summary(pl.UTF-8):	%{_modname} - backport implementacji filtra zlib dla PHP 5.0
 Name:		php-pecl-%{_modname}
 Version:	1.1
 Release:	6
