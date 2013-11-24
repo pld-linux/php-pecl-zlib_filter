@@ -5,7 +5,7 @@ Summary:	%{modname} - zlib filter implementation backport for PHP 5.0
 Summary(pl.UTF-8):	%{modname} - backport implementacji filtra zlib dla PHP 5.0
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.1
-Release:	7
+Release:	8
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -14,7 +14,8 @@ URL:		http://pecl.php.net/package/zlib_filter/
 BuildRequires:	%{php_name}-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
+Requires:	php(core) >= 5.0.4
+Provides:	php(%{modname}) = %{version}
 Obsoletes:	php-pear-%{modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
